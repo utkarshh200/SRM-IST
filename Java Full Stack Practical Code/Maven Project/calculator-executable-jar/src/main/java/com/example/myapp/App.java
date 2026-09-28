@@ -18,17 +18,17 @@ public class App implements ActionListener
 
     public App() 
     {
-        frame = new JFrame("Simple Calculator");
+        frame = new JFrame("Simple Calculator by Utkarsh");
         frame.setSize(500, 350);
         frame.setDefaultCloseOperation(JFrame.EXIT_ON_CLOSE);
 
         panel = new JPanel();
 
         // Input fields
-        JLabel l1 = new JLabel("First Number:");
+        JLabel l1 = new JLabel("1st Number:");
         t1 = new JTextField(10);
 
-        JLabel l2 = new JLabel("Second Number:");
+        JLabel l2 = new JLabel("2nd Number:");
         t2 = new JTextField(10);
 
         JLabel l3 = new JLabel("Result:");
@@ -120,7 +120,7 @@ public class App implements ActionListener
         } 
         catch (NumberFormatException ex) 
         {
-            tresult.setText("Invalid Input");
+            tresult.setText("error");
         }
     }
     public static void main(String[] args) 
